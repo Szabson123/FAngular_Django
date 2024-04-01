@@ -4,4 +4,9 @@ from django.db import models
 
 
 class Book(models.Model):
-    title = models.CharField(max_length=255)
+    title = models.CharField(max_length=50, blank=False, unique=True)
+    description = models.TextField(blank=True)
+
+    price = models.DecimalField(default=0, decimal_places=2, max_digits=10)
+    published = models.DateField()
+    cover = models.ImageField(upload_to='covers/')
