@@ -3,6 +3,7 @@
   <h1 *ngIf="counter < 2"> Kilknij mnie</h1>
   <h4>{{wynik}}</h4>
 
+  <h1 (click)="changeColor()" [ngStyle]="{'background-color': mycolor}">Color</h1>
   <button (click)="btnClicked()">Click</button>
   <button (click)="name='Hej po kliknięciu'">Click to chenge the name</button>
   <p><button (click)="counterClick()">Counter in Console</button></p>
@@ -11,6 +12,6 @@
   <input type="text" [(ngModel)]="name"/>
 
   <div *ngFor="let person of people">
-    <h3 *ngIf="person.age > 26">{{person.name}} is {{person.age}} year old</h3>
+    <h3 [ngClass]="{'red': person.age > 25}">{{person.name}} is {{person.age}} year old</h3>
   </div>
 </div>
