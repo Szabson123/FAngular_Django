@@ -14,4 +14,7 @@
   <div *ngFor="let person of people">
     <h3 [ngClass]="{'red': person.age > 25}">{{person.name}} is {{person.age}} year old</h3>
   </div>
+  <h1>{{ name | uppercase }}</h1>
+  <h3>{{ today | date: "dd/MM/yyyy" }}</h3>
+  <h3>{{ cash | currency:"EUR" }}</h3>
 </div>
