@@ -1,1 +1,11 @@
 <p>first works!</p>
+
+<form [formGroup]="ourForm" (ngSubmit)="sendForm()">
+    <label>Name</label>
+    <input type="text" formControlName="name">
+    <label>Surname</label>
+    <input type="text" formControlName="surname">
+    <button type="submit">Zapisz</button>
+</form>
+
+{{ ourForm.value | json }}
