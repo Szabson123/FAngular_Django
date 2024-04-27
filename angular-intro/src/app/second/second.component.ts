@@ -9,6 +9,9 @@ import { Location } from '@angular/common';
 })
 export class SecondComponent {
 
+  MyAnimal = "dog";
+  ChildAnimal = '';
+
   constructor(
     private route: ActivatedRoute,
     private location: Location
@@ -22,5 +25,7 @@ export class SecondComponent {
     this.location.back();
     console.log('button has been clicked');
   }
-
+  childChanged = (evt: any) => {
+    this.ChildAnimal = evt;
+  }
 }

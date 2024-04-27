@@ -1,2 +1,3 @@
-<p>second works!</p>
+<p>second works! {{ ChildAnimal }}</p>
 <button (click)="btnClicked()">Click</button>
+<app-child [animal] = "MyAnimal" (changed) = "childChanged($event)"></app-child>
