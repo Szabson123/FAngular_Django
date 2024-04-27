@@ -1,9 +1,13 @@
 import { Injectable } from '@angular/core';
-
+import { Observable } from 'rxjs';
 @Injectable({
   providedIn: 'root'
 })
 export class PeopleService {
+
+  newObservable$ = new Observable( observer => {
+    observer.next('hello');
+  });
 
   people = [
     {name: "Szymon", age: 25},

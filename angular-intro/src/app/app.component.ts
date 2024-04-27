@@ -22,6 +22,14 @@ export class AppComponent implements OnInit {
     this.counter = 2;
     console.log("Done")
     this.people = this.peopleService.allPeople();
+    this.peopleService.newObservable$.subscribe(
+      data => {
+        console.log('obs data here: ',data);
+      },
+      error =>{
+        console.log('error');
+      }
+    )
   }
 
   btnClicked = () =>{
