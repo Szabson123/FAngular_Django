@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { ApiService } from '../../api.service';
 
 @Component({
   selector: 'app-movie-list',
@@ -6,5 +7,13 @@ import { Component } from '@angular/core';
   styleUrl: './movie-list.component.css'
 })
 export class MovieListComponent {
+  movies: string[] = [];
 
+  constructor(
+    private apiSerivce: ApiService
+  ) {}
+
+  ngOnInit(){
+    this.movies = this.apiSerivce.getMovies();
+  }
 }
