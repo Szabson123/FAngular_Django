@@ -5,8 +5,8 @@ from django.views import View
 from base.models import Book
 from rest_framework import viewsets
 from base.serializers import BookSerializer
-from rest_framework.authentication import TokenAuthentication
-from rest_framework.permissions import IsAuthenticated
+# from rest_framework.authentication import TokenAuthentication
+# from rest_framework.permissions import IsAuthenticated
 # class Another(View):
 #     template_name = 'base/template1'
 #     def get(self, request):
@@ -26,5 +26,5 @@ def first(request):
 class BookViewSet(viewsets.ModelViewSet):
     serializer_class = BookSerializer
     queryset = Book.objects.all()
-    authentication_classes = (TokenAuthentication, )
-    permission_classes = (IsAuthenticated, )
+    # authentication_classes = (TokenAuthentication, )
+    # permission_classes = (IsAuthenticated, )

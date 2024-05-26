@@ -14,6 +14,11 @@ export class MovieListComponent {
   ) {}
 
   ngOnInit(){
-    this.movies = this.apiSerivce.getMovies();
+    this.apiSerivce.getMovies().subscribe(
+      data=>{
+        this.movies = data;
+      },
+      error => console.log(error)
+    );
   }
 }
