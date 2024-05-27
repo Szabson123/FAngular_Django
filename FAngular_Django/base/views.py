@@ -26,5 +26,5 @@ def first(request):
 class BookViewSet(viewsets.ModelViewSet):
     serializer_class = BookSerializer
     queryset = Book.objects.all()
-    # authentication_classes = (TokenAuthentication, )
-    # permission_classes = (IsAuthenticated, )
+    authentication_classes = (TokenAuthentication, )
+    permission_classes = (IsAuthenticated, )

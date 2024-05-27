@@ -10,11 +10,11 @@ export class MovieListComponent {
   movies: string[] = [];
 
   constructor(
-    private apiSerivce: ApiService
+    private apiService: ApiService
   ) {}
 
   ngOnInit(){
-    this.apiSerivce.getMovies().subscribe(
+    this.apiService.getMovies().subscribe(
       data=>{
         this.movies = data;
       },

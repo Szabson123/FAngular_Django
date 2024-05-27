@@ -5,6 +5,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="f64fe559-7c9f-44be-b501-0a6d29e58bbf" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/../Amovie-rater/src/app/api.service.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../Amovie-rater/src/app/api.service.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Amovie-rater/src/app/app.module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../Amovie-rater/src/app/app.module.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Amovie-rater/src/app/main/movie-list/movie-list.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../Amovie-rater/src/app/main/movie-list/movie-list.component.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../FAngular_Django/FAngular_Django/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/../FAngular_Django/FAngular_Django/settings.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../FAngular_Django/base/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/../FAngular_Django/base/views.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
