@@ -14,16 +14,12 @@ export class ApiService {
     Authorization: 'Token 405bb242bb8af79e86150c5c73cc48b7b92e4a25'
   });
 
-
-  private movies = ['terminator', 'predator'];
-
   constructor(
     private httpClient: HttpClient
   ) { }
 
-  getMovies(): Observable<string[]> {
-    return this.httpClient.get<{ title: string }[]>(this.baseUrl, { headers: this.headers}).pipe(map(response => response.map(movie => movie.title)))
+  getMovies(): Observable<{ title: string, description: string }[]>  {
+    return this.httpClient.get<{ title: string, description: string }[]>(this.baseUrl, { headers: this.headers})
 
   }
-
 }

@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, OnInit, Input } from '@angular/core';
 
 @Component({
   selector: 'app-movie-form',
@@ -6,5 +6,12 @@ import { Component } from '@angular/core';
   styleUrl: './movie-form.component.css'
 })
 export class MovieFormComponent {
+
+  @Input()
+  movies = [];
+
+  constructor (){ }
+
+  ngOnInit(){}
 
 }
