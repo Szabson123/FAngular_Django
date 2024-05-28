@@ -1,2 +1,7 @@
-<h1>{{ movie?.title }}</h1>
-<p>{{ movie?.description }}</p>
+
+<div *ngIf="movie">
+    <h1>{{ movie.title }}</h1>
+    <p>{{ movie.description }}</p>
+    {{movie.avg_ratings}}
+    <p>Ilość ocen: {{movie.number_of_ratings}}</p>
+</div>

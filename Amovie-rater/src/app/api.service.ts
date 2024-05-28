@@ -18,8 +18,8 @@ export class ApiService {
     private httpClient: HttpClient
   ) { }
 
-  getMovies(): Observable<{ title: string, description: string }[]>  {
-    return this.httpClient.get<{ title: string, description: string }[]>(this.baseUrl, { headers: this.headers})
+  getMovies(): Observable<any[]>  {
+    return this.httpClient.get<any[]>(this.baseUrl, { headers: this.headers})
 
   }
 }

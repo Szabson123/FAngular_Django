@@ -7,18 +7,15 @@ import { ApiService } from '../api.service';
   styleUrls: ['./main.component.css'] // Poprawiono styleUrl na styleUrls
 })
 export class MainComponent implements OnInit {
-  movies: { title: string, description: string }[] = [];
-  selectedMovie: { title: string, description: string } | null = null; // Dodano typ
+  movies: any[] = [];
+  selectedMovie: any | null = null;
 
   constructor(private apiService: ApiService) {}
 
   ngOnInit() {
     this.apiService.getMovies().subscribe(
       data => {
-        this.movies = data.map(movie => ({
-          title: movie.title,
-          description: movie.description
-        }));
+        this.movies = data;
       },
       error => console.log(error)
     );
